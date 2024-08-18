@@ -2,7 +2,7 @@ package Abstraction;
 abstract class E1{
     abstract void e11();
     void e12(){
-        System.out.println("ab");
+        System.out.println("Method");
     }
     abstract void e13();
 }
@@ -11,18 +11,18 @@ abstract class E2 extends E1{
 
     @Override
     void e11() {
-        System.out.println("cd");
+        System.out.println("Abstract 1");
     }
 }
 class E3 extends E2{
     @Override
     void e13() {
-        System.out.println("ef");
+        System.out.println("Abstract 2");
     }
 
     @Override
     void e21() {
-        System.out.println("gh");
+        System.out.println("Abstract 3");
     }
 }
 public class ABST {
